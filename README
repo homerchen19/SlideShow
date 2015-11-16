@@ -1,13 +1,13 @@
 For IOH
 
-##### 1. »İ§âPPT¶×¥X¦¨PNGÀÉ¡A¨Ã§â©Ò¦³¹ÏÀÉ©ñ¦b¦P¤@­Ó¸ê®Æ§¨¸Ì«á¥á¨ìslides¸ê®Æ§¨¤º
-##### 2. µø±¡ªp­×§ï *index.html* ¤¤ªº *var dir* (¸ô®|)
+##### 1. éœ€æŠŠPPTåŒ¯å‡ºæˆPNGæª”ï¼Œä¸¦æŠŠæ‰€æœ‰åœ–æª”æ”¾åœ¨åŒä¸€å€‹è³‡æ–™å¤¾è£¡å¾Œä¸Ÿåˆ°slidesè³‡æ–™å¤¾å…§
+##### 2. è¦–æƒ…æ³ä¿®æ”¹ *index.html* ä¸­çš„ *var dir* (è·¯å¾‘)
 ```sh
 	$(document).ready(function(){
 	var dir = "slides/test/";
 	var fileextension = ".PNG";`
 ```
-##### 3. µø±¡ªp­×§ï *js/jquery.presentation-full.js*  ªº  *fileName* ¤¤ */test/* 
+##### 3. è¦–æƒ…æ³ä¿®æ”¹ *js/jquery.presentation-full.js*  çš„  *fileName* ä¸­ */test/* 
 ```sh
 	 dataType: 'html',
          type: 'POST',
