@@ -1,5 +1,6 @@
 (function($) {
   $.fn.presentation = function(options) {
+    var timeContent = '';
     var config = {
 			slide: '.slide',
 			pagerClass: 'nav-pager',
@@ -47,7 +48,17 @@
           } 
           else if(e.keyCode === 39 || e.keyCode === 40 || e.keyCode === 34) {
             action = 'next';
-            alert($presentation.getFormattedDate());
+            timeContent = $presentation.getFormattedDate();
+            $.ajax({
+                url: 'saveTime.php',
+                cache: false,
+                dataType: 'html',
+                type: 'POST',
+                data: { timeContent: timeContent, fileName: "slides/test/timeStamp.txt"},
+                error: function(){
+                  alert("fail");
+                }
+            });
           }
           
           if(action !== '') {
