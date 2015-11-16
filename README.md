@@ -16,3 +16,5 @@ For IOH
          	alert("fail");
          }
 ```
+
+##### 4.每次按下一頁時會把時間記錄下來，並存成 *timeStamp.txt*，目前的路徑是在 *slides/test/* 裡
