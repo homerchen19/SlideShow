@@ -18,3 +18,5 @@ For IOH
 ```
 
 ##### 4.每次按下一頁時會把時間記錄下來，並存成 *timeStamp.txt*，目前的路徑是在 *slides/test/* 裡
+##### 5.DEMO 
+http://140.116.247.27/slideShow/
