@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slide Show</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+
+  </head>
+  <body>
+    
+    <div id="content">
+      <div id="slides">
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        var dir = "slides/test/";
+        var fileextension = ".PNG";
+        $.ajax({
+            url: dir,
+            success: function (data) {
+              //Lsit all png file names in the page
+              $(data).find("a:contains(" + fileextension + ")").each(function () {
+                var filename = this.href.replace(window.location.host, "").replace("http:///slideShow/", "");
+                $("#slides").append($("<div class = \"slide\"><img src=" + dir + filename + "></img></div>"));
+
+              });
+              $('#slides').presentation();
+            }
+        });
+      });
+
+    </script>
+    <script type="text/javascript" src="js/jquery.presentation-full.js"></script>
+  </body>
+</html>
